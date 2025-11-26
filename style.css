@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-primary-color: #0f100f;
+    --text-primary-color: #ffffff;
+
+    /* spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px; 
+    --spacing-lg: 24px;
+    --spaceing-xl: 32px;
+
+   
+}
+
+html,body{
+    height: 100%;
+    width: 100%;    
+    
+}
+
+main{
+    height: 100vh;
+    width: 100vw;    
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.infos{
+    display: flex;
+    justify-content: space-around;
+    padding: var(--spacing-md);
+}
+
+.info{
+    font-size: 1.2rem;
+    border : 2px solid var(--text-primary-color);
+    padding: var(--spacing-sm) ;  
+    border-radius: var(--spacing-sm);
+}
+
+section{
+    
+    padding: var(--spacing-lg);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.board{
+    flex-grow: 1;
+    border: 2px solid var(--text-primary-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minMax(50px, 1fr));
+    grid-template-rows: repeat(auto-fill, minMax(50px, 1fr));
+}
+
+.block{
+    /* width: 30px;
+    height: 30px; */
+    background-color: rgb(5, 80, 21);
+    border: 1px solid var(--bg-primary-color);
+   
+} 
+
+.snake{
+    background-color: rgb(106, 101, 238);
+}
+
